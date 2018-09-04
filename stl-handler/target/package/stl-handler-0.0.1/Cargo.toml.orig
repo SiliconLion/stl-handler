@@ -1,0 +1,10 @@
+[package]
+name = "stl-handler"
+version = "0.0.1"
+authors = ["David Sullivan <touisbetterthanpi@gmail.com>"]
+exclude = [
+    "assets/*",
+    "src/test.rs"
+]
+
+[dependencies]
