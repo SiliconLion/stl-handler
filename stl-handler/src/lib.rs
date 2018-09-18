@@ -124,6 +124,20 @@ pub struct Triangle {
 }
 
 impl Triangle {
+    pub fn normal(&self) -> Vertex {
+        self.normal
+    }
+
+    pub fn verts(&self) -> [Vertex; 3] {
+        self.verts
+    }
+
+    pub fn attribute(&self) -> u16 {
+        self.attribute
+    }
+}
+
+impl Triangle {
     //bytes should be a slice 50 in length
     fn from_bytes(bytes: &[u8] ) -> Triangle {
         if bytes.len() != 50 { print!("triangle::from_bytes error. bytes.len() != 50"); }
